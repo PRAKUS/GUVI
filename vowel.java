@@ -9,27 +9,20 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		char ch,a,e,i,o,u;
+		char[] vowels={'a','e','i','o','u'};
 		Scanner input=new Scanner(System.in);
-		ch=input.next().charAt(0);
-		
-	
-	//	System.out.println("enter your number");
-		if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+		String inputdata=input.nextLine();
+		char data=inputdata.charAt(0);
+		for(int i=0;i<=4;i++)
 		{
-			System.out.println("Vowel");
+			if(data==vowels[i])
+			{
+				System.out.print("vowels");
+				break;
+			}
+			else if(i==4)
+			{
+				System.out.print("consesent");	
+			}
 		}
-	//		else if (a<0)
-	//	{
-	//		System.out.println("Negative");
-	//	}
-		else 
-		{
-			System.out.println("Consonant");
-		}
-	
-		
-		
-
-	}
 }
